@@ -1,52 +1,34 @@
 <template>
-  <div>
-    <!-- -----------------------------------------------
-    Banner
-    ----------------------------------------------- -->
-    <Banner />
-    <!-- -----------------------------------------------
-    ./ Banner
-    ----------------------------------------------- -->
-    <!-- -----------------------------------------------
-    All Components
-    ----------------------------------------------- -->
-    <AllCustomComponents />
-    <!-- -----------------------------------------------
-    ./ All Components
-    ----------------------------------------------- -->
-    <!-- -----------------------------------------------
-    Coming Soon
-    ----------------------------------------------- -->
-    <ComingSoon />
-    <!-- -----------------------------------------------
-    ./ Coming Soon
-    ----------------------------------------------- -->
+
+  <div style="margin-top: 85px">
+    <BannerTwo />
+    <Feature1 />
+    <C2a1 />
+    <Portfolio />
+    <Testimonial />
+    <Contact />
   </div>
+
 </template>
 
 <script>
 export default {
-  head() {
-    return {
-      title: "NuxtJs UI kit | Free UI kit built with Vuetify",
-      meta: [
-        {
-          hid: "description",
-          name: "Next Ui Kit",
-          content: "Next Ui Kit is the best way",
-        },
-      ],
-    };
-  },
+  name: "mock",
 
   data() {
     return {};
   },
   components: {
-    Banner: () => import("@/components/shared/lp-banner/Banner"),
-    ComingSoon: () => import("@/components/shared/coming-soon/ComingSoon"),
-    AllCustomComponents: () =>
-      import("@/components/custom/AllCustomComponents"),
+    BannerTwo: () => import("@/components/shared/lp-banner/BannerTwo"),
+    Feature1: () => import("@/components/custom/features/Feature1"),
+    C2a1: () => import("@/components/custom/c2a/C2a1"),
+    Portfolio: () => import("@/components/custom/portfolio/Portfolio"),
+    Testimonial: () => import("@/components/custom/testimonial/Testimonial"),
+    Contact: () => import("@/components/custom/contact/Contact"),
   },
 };
 </script>
+
+<style scoped>
+
+</style>
