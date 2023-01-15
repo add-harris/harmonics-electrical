@@ -3,7 +3,7 @@
   <div style="margin-top: 85px">
     <BannerTwo />
     <Feature1 />
-    <C2a1 />
+<!--    <C2a1 />-->
     <Portfolio />
     <Testimonial />
     <Contact />

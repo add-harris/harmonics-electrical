@@ -1,6 +1,6 @@
 <template>
   <div>
-    <div class="feature1-component mini-spacer">
+    <div class="feature1-component mini-spacer" id="services">
       <v-container>
         <!-- -----------------------------------------------
             Start Feature 1 Text

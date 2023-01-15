@@ -1,6 +1,6 @@
 <template>
   <div>
-    <div class="mini-spacer">
+    <div class="mini-spacer" id="contact">
       <v-container>
         <!-- -----------------------------------------------
             Start Contact Form

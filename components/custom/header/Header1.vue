@@ -33,32 +33,28 @@
         >
           <ul class="navbar-nav">
             <li class="nav-item" text>
-              <n-link class="nav-link" nuxt to="/"> Home </n-link>
+              <n-link class="nav-link" nuxt to="#services"> Services </n-link>
             </li>
             <li class="nav-item" text>
-              <n-link class="nav-link" nuxt to="/about"> About Me </n-link>
+              <n-link class="nav-link" nuxt to="#our-work"> Our Work </n-link>
             </li>
             <li class="nav-item" text>
-              <n-link class="nav-link" nuxt to="/work"> Work </n-link>
+              <n-link class="nav-link" nuxt to="#reviews"> Reviews </n-link>
             </li>
-            <li class="nav-item" text>
-              <n-link class="nav-link" nuxt to="/services"> Services </n-link>
-            </li>
-            <li class="nav-item" text>
-              <n-link class="nav-link" nuxt to="/freebies"> Freebies </n-link>
-            </li>
+<!--            <li class="nav-item" text>-->
+<!--              <n-link class="nav-link" nuxt to="/services"> Conatct </n-link>-->
+<!--            </li>-->
           </ul>
         </div>
-        <!-- login-regiter -->
         <v-btn
           class="d-none d-lg-flex btn-custom-nm ml-5"
           nuxt
           outlined
           color="primary"
-          to="/"
+          to="#contact"
           elevation="0"
         >
-          Hire Me
+          Contact Us
         </v-btn>
       </v-container>
     </v-app-bar>

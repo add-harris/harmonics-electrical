@@ -1,6 +1,6 @@
 <template>
   <div>
-    <div class="portfolio-component mini-spacer">
+    <div class="portfolio-component mini-spacer" id="our-work">
       <v-container>
         <!-- -----------------------------------------------
             Start Portfolio Text
@@ -27,95 +27,18 @@
             Start Portfolio
         ----------------------------------------------- -->
         <v-row class="mt-13">
-          <v-col cols="12" md="6" lg="4">
+          <v-col cols="12" md="6" lg="4" v-for="example in examples" :key="example.image">
             <v-card class="portfolio-card overflow-hidden">
               <div class="portfolio-img">
                 <img
-                  src="@/assets/images/portfolio/img1.jpg"
-                  class="img-fluid"
+                  :src=example.image
                   alt="portfolio"
+                  class="img-fluid"
                 />
               </div>
               <v-card-text>
-                <h5 class="font-weight-medium font-18">
-                  Branding for Theme Designer
-                </h5>
-                <p class="font-14 mb-0">Digital Marketing</p>
-              </v-card-text>
-            </v-card>
-          </v-col>
-          <v-col cols="12" md="6" lg="4">
-            <v-card class="portfolio-card overflow-hidden">
-              <div class="portfolio-img">
-                <img
-                  src="@/assets/images/portfolio/img2.jpg"
-                  class="img-fluid"
-                  alt="portfolio"
-                />
-              </div>
-              <v-card-text>
-                <h5 class="font-weight-medium font-18">Button Designs Free</h5>
-                <p class="font-14 mb-0">Search Engine</p>
-              </v-card-text>
-            </v-card>
-          </v-col>
-          <v-col cols="12" md="6" lg="4">
-            <v-card class="portfolio-card overflow-hidden">
-              <div class="portfolio-img">
-                <img
-                  src="@/assets/images/portfolio/img3.jpg"
-                  class="img-fluid"
-                  alt="portfolio"
-                />
-              </div>
-              <v-card-text>
-                <h5 class="font-weight-medium font-18">Branding & Co Agency</h5>
-                <p class="font-14 mb-0">Admin templates</p>
-              </v-card-text>
-            </v-card>
-          </v-col>
-          <v-col cols="12" md="6" lg="4">
-            <v-card class="portfolio-card overflow-hidden">
-              <div class="portfolio-img">
-                <img
-                  src="@/assets/images/portfolio/img4.jpg"
-                  class="img-fluid"
-                  alt="portfolio"
-                />
-              </div>
-              <v-card-text>
-                <h5 class="font-weight-medium font-18">Zukandre Phoniex</h5>
-                <p class="font-14 mb-0">Branding</p>
-              </v-card-text>
-            </v-card>
-          </v-col>
-          <v-col cols="12" md="6" lg="4">
-            <v-card class="portfolio-card overflow-hidden">
-              <div class="portfolio-img">
-                <img
-                  src="@/assets/images/portfolio/img5.jpg"
-                  class="img-fluid"
-                  alt="portfolio"
-                />
-              </div>
-              <v-card-text>
-                <h5 class="font-weight-medium font-18">Sionage Mokcup</h5>
-                <p class="font-14 mb-0">Wll Mockup</p>
-              </v-card-text>
-            </v-card>
-          </v-col>
-          <v-col cols="12" md="6" lg="4">
-            <v-card class="portfolio-card overflow-hidden">
-              <div class="portfolio-img">
-                <img
-                  src="@/assets/images/portfolio/img6.jpg"
-                  class="img-fluid"
-                  alt="portfolio"
-                />
-              </div>
-              <v-card-text>
-                <h5 class="font-weight-medium font-18">Hard Cover Book Mock</h5>
-                <p class="font-14 mb-0">Book Covers</p>
+                <h5 class="font-weight-medium font-18">{{example.header}}</h5>
+                <p class="font-14 mb-0">{{example.text}}</p>
               </v-card-text>
             </v-card>
           </v-col>
@@ -132,7 +55,28 @@
 export default {
   name: "Portfolio",
   data() {
-    return {};
+    return {
+      examples: [
+        {
+          image: require("@/assets/images/bathroom.jpg"),
+          header: "Title",
+          text: "Some description.",
+          key: "bathroom"
+        },
+        {
+          image: require("@/assets/images/kitchen.jpg"),
+          header: "Title",
+          text: "Some description.",
+          key: "kitchen"
+        },
+        {
+          image: require("@/assets/images/circuitbox-outside.jpg"),
+          header: "Title",
+          text: "Some description.",
+          key: "circuit-box"
+        }
+      ]
+    };
   },
   methods: {},
 };
