@@ -41,9 +41,6 @@
             <li class="nav-item" text>
               <n-link class="nav-link" nuxt to="#reviews"> Reviews </n-link>
             </li>
-<!--            <li class="nav-item" text>-->
-<!--              <n-link class="nav-link" nuxt to="/services"> Conatct </n-link>-->
-<!--            </li>-->
           </ul>
         </div>
         <v-btn
