@@ -20,14 +20,14 @@
         >
           <div class="text-center">
             <h1 class="banner-title font-weight-bold white--text">
-              NuxtJs UI Kit Free
+              Harmonics Electrical
             </h1>
             <h4 class="banner-subtitle mr-0 white--text font-weight-regular">
-              Built with Nuxt Js and based on Vuetify js Free UI Kit
+              Top Quality Electrical Services in the North-East of England
             </h4>
             <div class="mt-16 pt-2">
-              <v-btn nuxt large to="/coming-soon" color="secondary" elevation="0">
-                Upgrade to Pro
+              <v-btn nuxt large to="#contact" color="secondary" elevation="0">
+                Get In Touch
               </v-btn>
             </div>
           </div>
